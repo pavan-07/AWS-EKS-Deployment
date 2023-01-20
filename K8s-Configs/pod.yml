@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todolist-pod
+  labels:
+    app: todolist
+spec:
+  containers:
+    - name: todolist-container
+      image: pavanxb/todolistweb

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todolist-svc
+  labels:
+    app: tosolist-svc
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: todolist-svc
+  type: LoadBalancer
